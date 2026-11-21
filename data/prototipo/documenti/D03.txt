@@ -1,0 +1,7 @@
+UNIVERSITY OF PADOVA – Department of Industrial Engineering
+Interim report – Research agreement with Termovia S.p.A. – June 2026
+
+Scope: reduction of fan noise in the outdoor unit of air-to-water heat pumps.
+Measurements in the semi-anechoic chamber show a 3 dB(A) reduction with the new fan blade profile.
+The interaction between the fan and the outdoor heat exchanger remains the main noise source.
+Next step: tests on the complete unit in September.

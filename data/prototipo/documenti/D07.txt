@@ -1,0 +1,5 @@
+RAPPORTO DI PROVA N. LT-2026-058
+Campione: compressore a velocità variabile R290, lotto 2 (12 unità)
+Prova: affidabilità, 1.000 ore a carico ciclico
+Esito: nessun guasto
+Note: carica di refrigerante del circuito di prova ridotta del 30% rispetto alla versione R410A.

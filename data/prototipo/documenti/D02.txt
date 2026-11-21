@@ -1,0 +1,6 @@
+SPECIFICA TECNICA – Scambiatore microcanale v2
+Autore: A. Ghidoni – 10/02/2026
+
+Obiettivo: sviluppare uno scambiatore a microcanali in lega di alluminio per le unità esterne delle pompe di calore da 6 a 12 kW.
+Target rispetto allo scambiatore attuale in rame e alluminio, a parità di capacità: carica di refrigerante ridotta di almeno il 30%; peso ridotto di almeno il 25%.
+Incertezza tecnica principale: distribuzione del refrigerante bifase nei collettori quando lo scambiatore funziona da evaporatore a basse temperature esterne.

@@ -1,0 +1,11 @@
+codice,progetto,pm,sede,cartelle_sharepoint,n_file,formati,lingue,epic_jira,ore_sap_2026
+TV-01,Compressore a velocità variabile per R290,M. Dal Bo,Treviso,/R&D/Compressori/R290_VSD,1240,PDF|XLSX|CAD,IT|EN,RD-114,6420
+TV-02,Algoritmo predittivo di sbrinamento,S. Pavan,Treviso,/R&D/Software/Defrost_AI,410,DOCX|PY|IPYNB|MD,IT|EN,RD-131,3180
+TV-03,Restyling estetico gamma Linea 2027,F. Corradini,Modena,/Design/Linea2027,860,PDF|PNG|AI,IT,,1950
+TV-04,Scambiatore microcanale in alluminio,A. Ghidoni,Modena,/R&D/Scambiatori/Microchannel|/Lab/Test_termici_2026,2100,PDF|DOCX|XLSX,IT,RD-102,5870
+TV-05,Migrazione modulo qualità ERP,R. Marchetto,Treviso,/IT/SAP_QM,320,DOCX|XLSX,IT,IT-88,2400
+TV-06,Pompa di calore ibrida per retrofit,L. Visentin,Treviso,/R&D/HP_Hybrid|/R&D/HP_Hybrid_OLD,1780,PDF|DOCX|XLSX|PPTX,IT|EN,RD-120,4050
+TV-07,Riduzione rumorosità unità esterna (con Università di Padova),C. Bertolini,Modena,/R&D/Acustica/NVH,540,PDF|WAV|XLSX,EN,,2200
+TV-08,App di controllo remoto v3,S. Pavan,Treviso,/R&D/IoT/App_v3,690,DOCX|MD|JSON,EN,RD-140,3600
+TV-09,Progetto Orione,,,/Varie/Orione,95,PPTX,IT,,0
+TV-10,Refrigerante a basso GWP: qualifica fornitori,G. Lugli,Modena,/Acquisti/Qualifica_R454B,230,PDF|XLSX,IT|EN,,820

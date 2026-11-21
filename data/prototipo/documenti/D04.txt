@@ -1,0 +1,10 @@
+LAB0RATORIO PROVE TERMOVIA - SEDE DI M0DENA
+RAPPORTO DI PROVA N. LT-2026-031
+Campione: scambiatore microcanale prot. Pl
+Data prova: 27/0l/2026
+Condizione di prova: A7/W35
+Capacita' misurata: 8,l kW   (rif. scambiatore Cu/Al: 8,3 kW)
+Carica refrigerante: 0,9 kg   (rif. Cu/Al: l,4 kg)
+Note: formazione di brina non uniforme a T est. < 2 °C (prova aggiuntiva A-2/W35)
+Esito: c0nforme ai requisiti interni di capacita'
+Firma: ____ (illeggibile)

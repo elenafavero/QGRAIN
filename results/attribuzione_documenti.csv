@@ -1,0 +1,13 @@
+﻿documento,percorso,progetti,confidenza,motivazione
+D01,/R&D/HP_Hybrid/Specifica_HP_ibrida_v3_FINALE_rev2.docx,TV-06,alta,"Percorso diretto /R&D/HP_Hybrid, autore L. Visentin (PM TV-06), contenuto specifico sulla pompa di calore ibrida per retrofit v3."
+D02,/R&D/Scambiatori/Microchannel/Specifica_Microcanale_v2.docx,TV-04,alta,"Percorso /R&D/Scambiatori/Microchannel, autore A. Ghidoni (PM TV-04), specifica tecnica dello scambiatore microcanale in alluminio."
+D03,/R&D/Acustica/NVH/UniPD_report_intermedio_EN.pdf,TV-07,alta,"Percorso /R&D/Acustica/NVH, report intermedio di ricerca Università di Padova su riduzione rumorosità fan unità esterna, esattamente ambito TV-07."
+D04,/Lab/Test_termici_2026/SCAN_0047.pdf,TV-04,alta,"Percorso /Lab/Test_termici_2026 (cartella TV-04), rapporto prova scambiatore microcanale P1 con misurazione carica refrigerante e capacità."
+D05,/R&D/Software/Defrost_AI/README.md,TV-02,alta,"Percorso /R&D/Software/Defrost_AI, responsabile S. Pavan (PM TV-02), README descrive algoritmo predittivo di sbrinamento Defrost AI."
+D06,/R&D/Comune/Verbale_riunione_R&D_2026-04-08.docx,TV-04; TV-01,alta,Verbale riunione R&D con discussioni su scambiatore microcanale (Ghidoni/TV-04) e compressore R290 (Dal Bo/TV-01). Documento condiviso rilevante per entrambi i progetti.
+D07,/R&D/Comune/Test_report_R290_compressore_lotto2.pdf,TV-01,alta,"Rapporto prova compressore a velocità variabile R290 lotto 2, affidabilità su 1000 ore, direttamente riconducibile a TV-01 per contenuto tecnico."
+D08,/R&D/Comune/Fornitori/Alutherm_P2_weights.eml,TV-04,alta,"Email da Alutherm a A. Ghidoni (PM TV-04) riguardante core P2 (prototipo scambiatore microcanale), pesi e spedizione campioni per campagna di test."
+D09,/Lab/Test_termici_2026/SCAN_0048.pdf,incerto,bassa,"Rapporto prova LT-2026-032 da percorso /Lab/Test_termici_2026 (TV-04), ma campione 'unità esterna prot. B' e esito 'da ripetere' non permettono attribuzione certa. Potrebbe riguardare TV-04, TV-06 o altri progetti con unità esterna, ma contenuto insufficiente."
+D10,/Design/Linea2027/moodboard_finale.pdf,TV-03,alta,"Percorso /Design/Linea2027, moodboard finale per Linea 2027, studio estetico superfici e palette colori direttamente riconducibile a TV-03 (Restyling estetico gamma Linea 2027)."
+D11,/R&D/Scambiatori/Microchannel/Analisi_costi_P2.xlsx,TV-04,alta,"Percorso /R&D/Scambiatori/Microchannel, analisi costi scambiatore microcanale P2 vs Cu/Al, brasatura Alutherm, direttamente riferita a TV-04."
+D12,/Varie/Orione/Orione_kickoff.pptx,TV-09,media,"Percorso /Varie/Orione, kickoff Progetto Orione con referente F. Corradini, griglia frontale unità esterna per Linea 2028. Attribuito a TV-09 per percorso Sharepoint specifico, anche se ambito design prossimo a TV-03."

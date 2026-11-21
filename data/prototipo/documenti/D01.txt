@@ -1,0 +1,6 @@
+SPECIFICA TECNICA – Pompa di calore ibrida per retrofit, v3 rev2
+Autore: L. Visentin – 30/05/2026
+
+Obiettivo: integrare una pompa di calore aria-acqua con la caldaia esistente negli impianti residenziali da ristrutturare.
+Unità esterna: nuovo telaio in alluminio e scambiatore a tubi alettati; peso dell'unità ridotto del 40% rispetto alla versione v2.
+Controllo: commutazione automatica tra pompa di calore e caldaia in base a temperatura esterna e costo dell'energia.

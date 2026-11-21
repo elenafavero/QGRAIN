@@ -1,0 +1,6 @@
+# Vieta l'esecuzione diretta di comandi che leggono .env
+prefix_rule(
+    pattern = [["cat", "less", "more", "head", "tail", "grep", "bat"], [".env", ".env.local", ".env.production"]],
+    decision = "forbidden",
+    justification = "Accesso ai file .env vietato per motivi di sicurezza."
+)

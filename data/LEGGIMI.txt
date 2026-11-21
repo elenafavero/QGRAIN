@@ -1,0 +1,11 @@
+Materiali della challenge Forward Deployed Engineer - QGRAIN
+
+Sono gli stessi dati della sezione "Materiali forniti" del brief, in file pronti all'uso.
+Tutti i file sono in UTF-8. Lo scenario e i dati sono inventati.
+
+progetti.csv                      Campione di 10 progetti su 30: serve per la Parte 1 e come riferimento per il prototipo
+file_sharepoint.csv               Campione di 12 file da SharePoint (solo l'elenco), per la Parte 1
+
+prototipo/bozza_TV-04_frasi.csv   Le 8 frasi della bozza di dossier da verificare (F1-F8)
+prototipo/documenti/indice.csv    Elenco dei 12 documenti (D01-D12) con il percorso della cartella in cui si trovano
+prototipo/documenti/D01-D12.txt   Il testo di ciascun documento, cosi' come lo restituisce l'estrazione

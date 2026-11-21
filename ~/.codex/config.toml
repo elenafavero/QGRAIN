@@ -1,0 +1,9 @@
+# Chiede sempre conferma prima di eseguire comandi shell o modificare file
+approval_policy = "untrusted"
+
+# Limita la scrittura rigorosamente alla sola cartella di lavoro corrente (e /tmp)
+sandbox_mode = "workspace-write"
+
+[sandbox_workspace_write]
+# Blocca l'accesso alla rete durante l'esecuzione dei comandi (opzionale ma consigliato)
+network_access = false

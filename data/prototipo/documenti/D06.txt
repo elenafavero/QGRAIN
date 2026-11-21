@@ -1,0 +1,8 @@
+VERBALE RIUNIONE R&D – 08/04/2026
+Presenti: M. Zanon, A. Ghidoni, M. Dal Bo, L. Visentin
+
+1. Scambiatore microcanale (Ghidoni)
+Il prototipo P1 mostra maldistribuzione del refrigerante nei collettori sotto i 2 °C esterni. Si decide di progettare un prototipo P2 con collettore a inserti forati. Valutata l'ipotesi di una domanda di brevetto sul collettore: decisione rinviata a giugno.
+
+2. Compressore R290 (Dal Bo)
+Confermato il secondo lotto di test di affidabilità.

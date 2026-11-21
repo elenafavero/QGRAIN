@@ -1,0 +1,5 @@
+# Defrost AI
+Modello che predice la formazione di brina sull'evaporatore dell'unità esterna e anticipa i cicli di sbrinamento.
+Dati: 14 mesi di telemetria da 120 unità installate.
+Risultato attuale: -18% di cicli di sbrinamento inutili nel test sul campo.
+Responsabile: S. Pavan

@@ -1,0 +1,11 @@
+From: k.weber@alutherm.example
+To: a.ghidoni@termovia.example
+Date: 20 May 2026
+Subject: P2 core – weights
+
+Hi Andrea,
+as requested, the brazed P2 core weighs 4.6 kg, compared with 6.9 kg for your current Cu/Al coil of the same capacity.
+We will ship the P2 samples for your test campaign next week.
+
+Best regards,
+Katrin Weber – Alutherm GmbH
