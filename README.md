@@ -16,13 +16,11 @@ Il modello predefinito è `claude-haiku-4-5-20251001`, si può cambiare nella ba
 
 ## Flusso
 
-1. Legge tutti i documenti di `data/prototipo/documenti` e il campione in `data/progetti.csv`. `data/file_sharepoint.csv` non viene usato dato che è indicato come materiale della Parte 1.
+1. Legge tutti i documenti di `data/prototipo/documenti`, il campione in `data/progetti.csv` e le frasi in `data/prototipo/bozza_TV-04_frasi.csv`.
 2. Chiede ad Anthropic di attribuire ogni documento a uno o più progetti campione oppure di segnarlo come **incerto**. Le attribuzioni sono modificabili nell'interfaccia ed esportabili in CSV.
-3. Per la verifica seleziona esclusivamente i documenti attribuiti a TV-04 nel passaggio 1 e recupera fino a cinque fonti candidate per frase.
-4. Invia tutte le frasi e le relative evidenze a una seconda richiesta API. Mostra una delle quattro etichette richieste, motivazione, confidenza e citazioni; consente di correggere l'esito.
+3. Seleziona esclusivamente i documenti attribuiti a TV-04 nel passaggio 1 e per ogni frase recupera fino a cinque fonti candidate, selezionate attraverso uno score di somiglianza lessicale.
+4. Invia tutte le frasi e le fonti a una seconda richiesta API, che associa ad ogni frase le specifiche fonti che la supportano o meno. Mostra una delle quattro etichette richieste (supportata, non supportata, ecc...), motivazione, confidenza e citazioni; consente di correggere l'esito.
 5. Le associazioni frase -> documenti sono modificabili nell'interfaccia ed esportabili in CSV.
-
-Il recupero lessicale serve a scegliere le fonti candidate solo all'interno del gruppo TV-04; non è una ricerca semantica. Le due fasi generano due richieste Anthropic. Controlla le attribuzioni, le citazioni e gli esiti, soprattutto quando i documenti contengono OCR rumoroso o descrivono obiettivi e decisioni non ancora realizzati.
 
 
 ## Parte facoltativa
@@ -67,7 +65,7 @@ Per la associazione dei documenti alle singole frasi:
 
 
 # Limiti
-1. fase 2: quando si selezionano 5 documenti per frase, si fa una ricerca lessicale -> Limite: non c’è stemming né sinonimi. “riduzione” e “ridotto” per lei sono parole diverse. La decisione semantica vera la prende l'LLM, ma solo sui documenti che la ricerca gli passa. Un documento rilevante può non arrivare mai a Claude.
+1. fase 2: quando si selezionano 5 documenti per frase, si fa una ricerca lessicale -> Limite: non c’è stemming (riduzione alla radice) né sinonimi. es: “riduzione” e “ridotto” per sono considerate parole diverse. La decisione semantica vera la prende l'LLM, ma solo sui documenti che la ricerca gli passa. Un documento rilevante può non arrivare mai al modello.
 2.  In review_claims il payload è così:
 
     ```json
@@ -84,16 +82,13 @@ Per la associazione dei documenti alle singole frasi:
         ]
     ```
 
-    Ogni frase porta con sé la propria lista di documenti, con il testo completo. Non esiste una tabella condivisa di documenti a cui le frasi fanno riferimento: il testo viene copiato dentro ogni frase che lo recupera. Se lo stesso documento compare in frasi diverse, il testo del documento viene inviato n volte uguale nella richiesta all'LLM -> spreco
-    di token e di contesto (magari non sufficientemente ampio se documenti lunghi)
+    Ogni frase porta con sé la propria lista di documenti, con il testo completo. Non esiste una tabella condivisa di documenti a cui le frasi fanno riferimento: il testo viene copiato dentro ogni frase che lo recupera. Se lo stesso documento compare in frasi diverse, il testo del documento viene inviato n volte uguale nella richiesta all'LLM -> spreco di token e di contesto (magari non sufficientemente ampio se documenti lunghi)
 
 
-3. Il prompt dice al modello di riportare “brevi citazioni fedeli” con l’ID del documento, Ma questa è una richiesta, non un controllo. Il modello è probabilistico: può sbagliare.
-Non viene controllato:
-    a) Che la citazione esista nel documento.
+3. Il prompt dice al modello di riportare “brevi citazioni fedeli” con l’ID del documento, ma non viene verificato che queste citazioni esistano davvero nel documento
    
 NB:
-- tokens <= 2 balzati: check se ha senso
+- tokens <= 2 non considerati: check se ha senso
 - Retrieval lessicale. Niente sinonimi, stemming o lingue diverse: D08 (inglese) non arriva a F4. Numeri e OCR rovinato (l,4, M0DENA) peggiorano la situazione.
 - operazioni aritmetiche lasciate al modello
 - controllare che la quote sia davvero nel documento
@@ -104,7 +99,8 @@ se n° file = 25.000 e file lunghi:
 - non si possono mettere tutti i documenti in 1 solo prompt
 - anche mettere solo tutto il documento nel prompt non va bene
 - se stesso documento serve per più frasi -> duplicato nel prompt
-- nessuna cache
+
+
 
 
 # Soluzione

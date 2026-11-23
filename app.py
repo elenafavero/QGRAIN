@@ -296,6 +296,7 @@ if st.button("Riconosci i progetti", type="primary"):
         except (ValueError, json.JSONDecodeError) as exc:
             st.error(f"Risposta del modello non leggibile: {exc}")
 
+# UI
 # document_id, project_ids, uncertain, confidence, reason
 recognition = st.session_state.recognition
 recognition_by_id: dict[str, dict[str, Any]] = {}
@@ -345,6 +346,7 @@ if recognition:
 elif st.session_state.recognition is None:
     st.info("Avvia il passaggio 1 per attribuire i documenti ai progetti. Il passaggio 2 si abilita dopo il riconoscimento.")
 
+# UI
 review = st.session_state.review
 if review:
     st.caption(f"Modello: {review['model']} · Token: {review['usage']['input_tokens']} input / {review['usage']['output_tokens']} output")
